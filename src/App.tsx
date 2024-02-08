@@ -1,9 +1,13 @@
+import MovingShapes from "./styles/Shape"
+import Card from "./quiz_app/card"
+
 export default function App() {
 
   return (
     <>
       <div>
-        HI
+        <MovingShapes />
+        <Card />
       </div>
     </>
   )

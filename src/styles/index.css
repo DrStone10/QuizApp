@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #070f27;
+    overflow: hidden;
+}
+
+.shape {
+    position: absolute;
+    width: 2000px; /* Increase size */
+    height: 2000px; /* Increase size */
+    background-color: #65baff0c;
+    border-radius: 50%;
+    animation: moveShape 40s infinite alternate ease-in-out;
+    z-index: -1;
+    box-shadow: 4px 4px 100px 100px hsla(215, 72%, 64%, 0.052);
+}
+  
+@keyframes moveShape {
+    0% {
+      transform: translateY(200px) rotate(0deg);
+      transform: translateX(200px);
+    }
+    50% {
+      transform: translateY(-600px) rotate(0deg);
+      transform: translateX(-200px);
+    }
+    100% {
+      transform: translateY(800px) rotate(0deg);
+      transform: translateX(200px);
+    }
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.quiz-app{
+    width: 100%;
+    max-width: 540px;
+    background: linear-gradient(135deg, #00feba11, #5b548acd);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px #00000041;
+}
